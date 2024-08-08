@@ -80,7 +80,8 @@
             let results = [];
         
             for (const refNum of refNums) {
-                const url = `/api/proxy/${refNum}`;
+                const url = `https://your-app-name.onrender.com/api/proxy/${refNum}`;
+
                 try {
                     const response = await fetch(url);
                     if (!response.ok) {
